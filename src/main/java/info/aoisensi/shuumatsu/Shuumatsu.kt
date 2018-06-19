@@ -9,7 +9,7 @@ class Shuumatsu {
 
     @Mod.EventHandler
     fun preInit(event: FMLPreInitializationEvent) {
-        SHUUMATSU_WORLD_TYPE = ShuumatsuWorldType()
+        WORLD_TYPE_SHUUMATSU = WorldTypeShuumatsu()
     }
 
     companion object {
@@ -18,7 +18,7 @@ class Shuumatsu {
         const val MOD_NAME = "Shuumatsu"
         const val VERSION = "1.0-SNAPSHOT"
 
-        var SHUUMATSU_WORLD_TYPE: WorldType? = null
+        var WORLD_TYPE_SHUUMATSU: WorldType? = null
     }
 
 }
