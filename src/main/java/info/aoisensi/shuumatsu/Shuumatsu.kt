@@ -18,19 +18,23 @@ class Shuumatsu {
         WORLD_TYPE_SHUUMATSU = WorldTypeShuumatsu()
 
         val blockStatueBody = BlockStatueBody()
+        val blockStatueHead = BlockStatueHead()
 
         ForgeRegistries.BLOCKS.apply {
             register(blockStatueBody)
+            register(blockStatueHead)
         }
 
         ForgeRegistries.ITEMS.apply {
             register(ItemBlock(blockStatueBody).setRegistryName("statue_body"))
+            register(ItemBlock(blockStatueHead).setRegistryName("statue_head"))
         }
 
         if (event.side.isClient) {
-
             ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(blockStatueBody), 0,
                     ModelResourceLocation("$MOD_ID:statue_body", "inventory"))
+            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(blockStatueHead), 0,
+                    ModelResourceLocation("$MOD_ID:statue_head", "inventory"))
         }
 
     }

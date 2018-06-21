@@ -14,11 +14,11 @@ import net.minecraft.world.World
 import net.minecraftforge.fml.relauncher.Side
 import net.minecraftforge.fml.relauncher.SideOnly
 
-class BlockStatueBody : Block(Material.ROCK) {
+class BlockStatueHead : Block(Material.ROCK) {
     init {
         setCreativeTab(CreativeTabs.BUILDING_BLOCKS)
-        unlocalizedName = "Statue Body"
-        setRegistryName("statue_body")
+        unlocalizedName = "Statue Head"
+        setRegistryName("statue_Head")
         setLightLevel(0.0F)
         setHardness(3.0F)
         setResistance(30.0F)
