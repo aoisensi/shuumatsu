@@ -1,0 +1,68 @@
+{
+  "textures": {
+    "body": "minecraft:blocks/stone",
+    "particle": "minecraft:blocks/stone"
+  },
+  "elements": [
+    {
+      "from": [3, 0, 13],
+      "to": [13, 2, 16],
+      "faces": {
+        "north": {
+          "uv": [3, 14, 13, 16],
+          "texture": "#body"
+        },
+        "east": {
+          "uv": [0, 14, 3, 16],
+          "texture": "#body"
+        },
+        "south": {
+          "uv": [3, 14, 13, 16],
+          "texture": "#body"
+        },
+        "west": {
+          "uv": [13, 14, 16, 16],
+          "texture": "#body"
+        },
+        "up": {
+          "uv": [3, 13, 13, 16],
+          "texture": "#body"
+        },
+        "down": {
+          "uv": [3, 0, 13, 3],
+          "texture": "#body"
+        }
+      }
+    },
+    {
+      "from": [5, 2, 15],
+      "to": [11, 3, 16],
+      "faces": {
+        "north": {
+          "uv": [5, 13, 11, 14],
+          "texture": "#body"
+        },
+        "east": {
+          "uv": [0, 13, 1, 14],
+          "texture": "#body"
+        },
+        "south": {
+          "uv": [5, 13, 11, 14],
+          "texture": "#body"
+        },
+        "west": {
+          "uv": [15, 13, 16, 14],
+          "texture": "#body"
+        },
+        "up": {
+          "uv": [5, 15, 11, 16],
+          "texture": "#body"
+        },
+        "down": {
+          "uv": [5, 0, 11, 1],
+          "texture": "#body"
+        }
+      }
+    }
+  ]
+}

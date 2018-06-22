@@ -1,7 +1,64 @@
 {
   "variants": {
-    "normal": {
-      "model": "shuumatsu:statue_head"
+    "facing=north,part=neck": {
+      "model": "shuumatsu:statue_head_neck"
+    },
+    "facing=north,part=face": {
+      "model": "shuumatsu:statue_head_face"
+    },
+    "facing=north,part=head": {
+      "model": "shuumatsu:statue_head_head"
+    },
+    "facing=north,part=edge": {
+      "model": "shuumatsu:statue_head_edge"
+    },
+    "facing=east,part=neck": {
+      "model": "shuumatsu:statue_head_neck",
+      "y": 90
+    },
+    "facing=east,part=face": {
+      "model": "shuumatsu:statue_head_face",
+      "y": 90
+    },
+    "facing=east,part=head": {
+      "model": "shuumatsu:statue_head_head",
+      "y": 90
+    },
+    "facing=east,part=edge": {
+      "model": "shuumatsu:statue_head_edge",
+      "y": 90
+    },
+    "facing=south,part=neck": {
+      "model": "shuumatsu:statue_head_neck",
+      "y": 180
+    },
+    "facing=south,part=face": {
+      "model": "shuumatsu:statue_head_face",
+      "y": 180
+    },
+    "facing=south,part=head": {
+      "model": "shuumatsu:statue_head_head",
+      "y": 180
+    },
+    "facing=south,part=edge": {
+      "model": "shuumatsu:statue_head_edge",
+      "y": 180
+    },
+    "facing=west,part=neck": {
+      "model": "shuumatsu:statue_head_neck",
+      "y": 270
+    },
+    "facing=west,part=face": {
+      "model": "shuumatsu:statue_head_face",
+      "y": 270
+    },
+    "facing=west,part=head": {
+      "model": "shuumatsu:statue_head_head",
+      "y": 270
+    },
+    "facing=west,part=edge": {
+      "model": "shuumatsu:statue_head_edge",
+      "y": 270
     }
   }
 }

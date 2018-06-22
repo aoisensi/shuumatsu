@@ -18,22 +18,22 @@ class Shuumatsu {
         WORLD_TYPE_SHUUMATSU = WorldTypeShuumatsu()
 
         val blockStatueBody = BlockStatueBody()
-        val blockStatueHead = BlockStatueHead()
+        BLOCK_STATUE_HEAD = BlockStatueHead()
 
         ForgeRegistries.BLOCKS.apply {
             register(blockStatueBody)
-            register(blockStatueHead)
+            register(BLOCK_STATUE_HEAD)
         }
 
         ForgeRegistries.ITEMS.apply {
             register(ItemBlock(blockStatueBody).setRegistryName("statue_body"))
-            register(ItemBlock(blockStatueHead).setRegistryName("statue_head"))
+            register(ItemBlockStatueHead(BLOCK_STATUE_HEAD).setRegistryName("statue_head"))
         }
 
         if (event.side.isClient) {
             ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(blockStatueBody), 0,
                     ModelResourceLocation("$MOD_ID:statue_body", "inventory"))
-            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(blockStatueHead), 0,
+            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(BLOCK_STATUE_HEAD), 0,
                     ModelResourceLocation("$MOD_ID:statue_head", "inventory"))
         }
 
@@ -46,6 +46,8 @@ class Shuumatsu {
         const val VERSION = "0.0-dev"
 
         lateinit var WORLD_TYPE_SHUUMATSU: WorldType
+
+        lateinit var BLOCK_STATUE_HEAD: BlockStatueHead
     }
 
 }
