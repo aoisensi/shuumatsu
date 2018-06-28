@@ -1,5 +1,6 @@
 package info.aoisensi.shuumatsu
 
+import net.minecraft.block.Block
 import net.minecraft.block.BlockHorizontal
 import net.minecraft.block.material.Material
 import net.minecraft.block.properties.PropertyEnum
@@ -75,6 +76,13 @@ class BlockStatueHead : BlockHorizontal(Material.ROCK) {
 
     override fun createBlockState(): BlockStateContainer {
         return BlockStateContainer(this, BlockHorizontal.FACING, PART)
+    }
+
+    override fun dropBlockAsItemWithChance(worldIn: World, pos: BlockPos, state: IBlockState, chance: Float, fortune: Int) {
+        if (state.getValue(PART) != EnumPartType.NECK) {
+            return
+        }
+        Block.spawnAsEntity(worldIn, pos, ItemStack(Shuumatsu.ITEM_BLOCK_STATUE_HEAD))
     }
 
     companion object {

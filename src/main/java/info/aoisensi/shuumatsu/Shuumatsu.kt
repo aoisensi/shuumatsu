@@ -27,7 +27,8 @@ class Shuumatsu {
 
         ForgeRegistries.ITEMS.apply {
             register(ItemBlock(blockStatueBody).setRegistryName("statue_body"))
-            register(ItemBlockStatueHead(BLOCK_STATUE_HEAD).setRegistryName("statue_head"))
+            ITEM_BLOCK_STATUE_HEAD = ItemBlockStatueHead(BLOCK_STATUE_HEAD).setRegistryName("statue_head")
+            register(ITEM_BLOCK_STATUE_HEAD)
         }
 
         if (event.side.isClient) {
@@ -48,6 +49,8 @@ class Shuumatsu {
         lateinit var WORLD_TYPE_SHUUMATSU: WorldType
 
         lateinit var BLOCK_STATUE_HEAD: BlockStatueHead
+
+        lateinit var ITEM_BLOCK_STATUE_HEAD: Item
     }
 
 }
